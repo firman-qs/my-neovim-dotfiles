@@ -1,0 +1,24 @@
+-- local setup, indent_blankline = pcall(require, "indent_blankline")
+-- if not setup then
+-- 	print("indent_blankline missing !")
+-- 	return
+-- end
+--
+-- indent_blankline.setup({
+-- 	-- for example, context is off by default, use this to turn it on
+-- 	char = "│",
+-- 	filetype_exclude = {
+-- 		"TelescopePrompt",
+-- 		"dashboard",
+-- 		"NvimTree",
+-- 		"packer",
+-- 		"terminal",
+-- 		"nofile",
+-- 		"quickfix",
+-- 		"lspinfo",
+-- 		"checkhealth",
+-- 		"help",
+-- 		"man",
+-- 		"",
+-- 	},
+-- })
