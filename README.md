@@ -1,5 +1,6 @@
 # MY NEOVIM DOTFILES
-![Screenshot](screenshot.png)
+![Screenshot](screenshot_windows.png)
+![Screenshot](screenshot_gnulinux.png)
 
 Want to use it?, just copy to the ~/.config/nvim/ (for linux) or ~/AppData/Local/nvim/ (for windows). All plugin and whatever will automatically installed.
 - for fonts I use nerd font: [caskaydia cove](https://www.nerdfonts.com/font-downloads). You can download any other patched font here https://www.nerdfonts.com/font-downloads
