@@ -36,9 +36,13 @@ return packer.startup(function(use)
 	use("NTBBloodbath/doom-one.nvim")
 	use("navarasu/onedark.nvim")
 	use("Shatur/neovim-ayu")
-
+	use("sainnhe/gruvbox-material")
+	use("luisiacc/gruvbox-baby")
+	use("audibleblink/hackthebox.vim")
 	-- colorpicker and highlighter
 	use("NvChad/nvim-colorizer.lua")
+	use("lervag/vimtex")
+	use({ "catppuccin/nvim", as = "catppuccin" })
 
 	-- indent guide
 	-- use("lukas-reineke/indent-blankline.nvim")
@@ -82,7 +86,7 @@ return packer.startup(function(use)
 		requires = { { "hoob3rt/lualine.nvim", opt = true }, { "kyazdani42/nvim-web-devicons", opt = true } },
 	})
 	-- Bufferline ---------------
-	-- use("akinsho/bufferline.nvim")
+	use("akinsho/bufferline.nvim")
 
 	-- winbar
 	-- use({

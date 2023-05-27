@@ -1,6 +1,6 @@
 -- set colorscheme to nightfly with protected call
 -- in case it isn't installed
-local status, kanagawa = pcall(vim.cmd, "colorscheme kanagawa")
+local status, kanagawa = pcall(vim.cmd, "colorscheme catppuccin-frappe")
 if not status then
 	print("Colorscheme not found!") -- print error if colorscheme not installed
 	return

@@ -12,7 +12,8 @@ keymap.set("n", "<leader>sh", "<C-w>s") -- split horizontal
 keymap.set("n", "<leader>se", "<C-w>=") -- split window equal width
 keymap.set("n", "<leader>sx", ":close<CR>") -- split vertical
 
-keymap.set("n", "<leader>to", ":TablineTabNew<CR>") -- open new tab
+keymap.set("n", "<C-t>", ":tabnew<CR>") -- open new tab
+keymap.set("n", "<C-w>", ":tabclose<CR>") -- open new tab
 keymap.set("n", "<leader>tx", ":TablineTabClose<CR>") -- close current tab
 keymap.set("n", "<leader>tn", ":TablineBufferNext<CR>") -- go to next tab
 keymap.set("n", "<leader>tp", ":TablineBufferPrevious<CR>") -- go to previous tab
@@ -39,11 +40,12 @@ keymap.set("n", "<leader>fh", "<cmd>Telescope help_tags<cr>") -- list available 
 local map = vim.api.nvim_set_keymap
 local opts = { noremap = true, silent = true }
 -- Move to previous/next
-map("n", "<A-,>", "<Cmd>BufferPrevious<CR>", opts)
-map("n", "<A-.>", "<Cmd>BufferNext<CR>", opts)
+map("n", "<A-,>", "<Cmd>BufferlineCyclePrev<CR>", opts)
+map("n", "<A-.>", "<Cmd>BufferlineCycleNext<CR>", opts)
+map("n", "<TAB>", "<Cmd>BufferlineCycleNext<CR>", opts)
 -- Re-order to previous/next
-map("n", "<A-<>", "<Cmd>BufferMovePrevious<CR>", opts)
-map("n", "<A->>", "<Cmd>BufferMoveNext<CR>", opts)
+-- map("n", "<A-<>", "<Cmd>BufferMovePrevious<CR>", opts)
+-- map("n", "<A->>", "<Cmd>BufferMoveNext<CR>", opts)
 -- Goto buffer in position...
 map("n", "<A-1>", "<Cmd>BufferGoto 1<CR>", opts)
 map("n", "<A-2>", "<Cmd>BufferGoto 2<CR>", opts)

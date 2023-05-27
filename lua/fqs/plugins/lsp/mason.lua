@@ -22,7 +22,6 @@ mason_lspconfig.setup({
 	ensure_installed = {
 		"html",
 		"cssls",
-		"sumneko_lua",
 		"emmet_ls",
 	},
 })
