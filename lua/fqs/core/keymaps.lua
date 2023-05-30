@@ -18,7 +18,8 @@ keymap.set("n", "<leader>tx", ":TablineTabClose<CR>") -- close current tab
 keymap.set("n", "<leader>tn", ":TablineBufferNext<CR>") -- go to next tab
 keymap.set("n", "<leader>tp", ":TablineBufferPrevious<CR>") -- go to previous tab
 
-keymap.set("n", "<A-l>", ":nohl<CR><C-l>")
+keymap.set("n", "<leader>l", ":nohl<CR>")
+-- keymap.set("n", "<A-l>", ':let @/ = ""')
 
 -- -----------------------------------------
 -- plugin keymaps
@@ -92,3 +93,7 @@ maps.t["<F7>"] = maps.n["<F7>"]
 maps.t["<A-i>"] = maps.n["<F7>"]
 maps.n["<C-'>"] = maps.n["<F7>"]
 maps.t["<C-'>"] = maps.n["<F7>"]
+
+-- Save the documents
+keymap.set("n", "<C-s>", ":w<CR>")
+keymap.set("i", "<C-s>", ":w<CR>")
