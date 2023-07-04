@@ -1,3 +1,4 @@
+> all my new complete configuration moved to [this repo](https://github.com/firman-qs/dotfiles-fqs)
 # MY NEOVIM DOTFILES
 ![Screenshot](screenshot_mswindows.png)
 ![Screenshot](screenshot_gnulinux.png)
